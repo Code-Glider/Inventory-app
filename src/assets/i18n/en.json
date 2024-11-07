@@ -1,0 +1,109 @@
+{
+  "inventory": {
+    "title": "Inventory Management",
+    "view": {
+      "title": "View Inventory"
+    },
+    "manage": {
+      "title": "Manage Inventory"
+    },
+    "settings": {
+      "title": "Settings"
+    },
+    "history": {
+      "title": "History",
+      "export": "Export History",
+      "date": "Date",
+      "item": "Item",
+      "action": "Action",
+      "quantity": "Quantity",
+      "user": "User",
+      "actions": {
+        "add": "Add",
+        "remove": "Remove",
+        "update": "Update",
+        "create": "Create",
+        "delete": "Delete"
+      }
+    },
+    "export": {
+      "current": "Export Current Inventory",
+      "excel": "Export to Excel",
+      "csv": "Export to CSV"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "totalItems": "Total Items",
+      "lowStock": "Low Stock",
+      "categories": "Categories"
+    },
+    "items": {
+      "add": "Add Item",
+      "edit": "Edit Item",
+      "delete": "Delete Item",
+      "name": "Name",
+      "category": "Category",
+      "currentStock": "Current Stock",
+      "idealStock": "Ideal Stock",
+      "threshold": "Alert Threshold",
+      "status": "Status",
+      "noItems": "No items in this category",
+      "stockLevel": "Stock Level",
+      "outOfStock": "Out of Stock",
+      "lowStock": "Low Stock",
+      "inStock": "In Stock"
+    },
+    "categories": {
+      "title": "Categories",
+      "add": "Add Category",
+      "edit": "Edit Category",
+      "delete": "Delete Category",
+      "name": "Name",
+      "itemCount": "Item Count"
+    },
+    "alerts": {
+      "lowStock": "Low Stock Alert",
+      "success": "Operation Completed Successfully",
+      "error": "Operation Failed",
+      "stockUpdated": "Stock Updated Successfully",
+      "settingsUpdated": "Settings Updated Successfully",
+      "exportSuccess": "Export Completed Successfully"
+    },
+    "admin": {
+      "title": "System Administration",
+      "inventory": "Inventory",
+      "allItems": "All Items",
+      "technicians": "Technicians",
+      "management": "Management"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "register": "Register",
+    "invalidCredentials": "Invalid Credentials"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "loading": "Loading...",
+    "language": "Language",
+    "actions": "Actions",
+    "add": "Add",
+    "remove": "Remove",
+    "update": "Update",
+    "export": "Export",
+    "pagination": {
+      "itemsPerPage": "Items per page",
+      "nextPage": "Next page",
+      "previousPage": "Previous page",
+      "firstPage": "First page",
+      "lastPage": "Last page",
+      "rangeEmpty": "0 of 0",
+      "range": "{{startIndex}}-{{endIndex}} of {{length}}"
+    }
+  }
+}

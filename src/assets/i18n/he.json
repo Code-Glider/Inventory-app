@@ -1,0 +1,109 @@
+{
+  "inventory": {
+    "title": "ניהול מלאי",
+    "view": {
+      "title": "צפייה במלאי"
+    },
+    "manage": {
+      "title": "ניהול מלאי"
+    },
+    "settings": {
+      "title": "הגדרות"
+    },
+    "history": {
+      "title": "היסטוריה",
+      "export": "ייצוא היסטוריה",
+      "date": "תאריך",
+      "item": "פריט",
+      "action": "פעולה",
+      "quantity": "כמות",
+      "user": "משתמש",
+      "actions": {
+        "add": "הוספה",
+        "remove": "הורדה",
+        "update": "עדכון",
+        "create": "יצירה",
+        "delete": "מחיקה"
+      }
+    },
+    "export": {
+      "current": "ייצוא מלאי נוכחי",
+      "excel": "ייצוא ל-Excel",
+      "csv": "ייצוא ל-CSV"
+    },
+    "dashboard": {
+      "title": "לוח בקרה",
+      "totalItems": "סך הכל פריטים",
+      "lowStock": "מלאי נמוך",
+      "categories": "קטגוריות"
+    },
+    "items": {
+      "add": "הוסף פריט",
+      "edit": "ערוך פריט",
+      "delete": "מחק פריט",
+      "name": "שם",
+      "category": "קטגוריה",
+      "currentStock": "מלאי נוכחי",
+      "idealStock": "מלאי אידיאלי",
+      "threshold": "סף התראה",
+      "status": "סטטוס",
+      "noItems": "אין פריטים בקטגוריה זו",
+      "stockLevel": "רמת מלאי",
+      "outOfStock": "אזל מהמלאי",
+      "lowStock": "מלאי נמוך",
+      "inStock": "במלאי"
+    },
+    "categories": {
+      "title": "קטגוריות",
+      "add": "הוסף קטגוריה",
+      "edit": "ערוך קטגוריה",
+      "delete": "מחק קטגוריה",
+      "name": "שם",
+      "itemCount": "מספר פריטים"
+    },
+    "alerts": {
+      "lowStock": "התראת מלאי נמוך",
+      "success": "הפעולה הושלמה בהצלחה",
+      "error": "שגיאה בביצוע הפעולה",
+      "stockUpdated": "המלאי עודכן בהצלחה",
+      "settingsUpdated": "ההגדרות עודכנו בהצלחה",
+      "exportSuccess": "הייצוא הושלם בהצלחה"
+    },
+    "admin": {
+      "title": "ניהול מערכת",
+      "inventory": "מלאי",
+      "allItems": "כל הפריטים",
+      "technicians": "טכנאים",
+      "management": "ניהול"
+    }
+  },
+  "auth": {
+    "login": "התחברות",
+    "logout": "התנתקות",
+    "email": "דואר אלקטרוני",
+    "password": "סיסמה",
+    "register": "הרשמה",
+    "invalidCredentials": "פרטי התחברות שגויים"
+  },
+  "common": {
+    "save": "שמור",
+    "cancel": "בטל",
+    "search": "חיפוש",
+    "loading": "טוען...",
+    "language": "שפה",
+    "actions": "פעולות",
+    "add": "הוסף",
+    "remove": "הורד",
+    "update": "עדכן",
+    "export": "ייצוא",
+    "pagination": {
+      "itemsPerPage": "פריטים לעמוד",
+      "nextPage": "העמוד הבא",
+      "previousPage": "העמוד הקודם",
+      "firstPage": "עמוד ראשון",
+      "lastPage": "עמוד אחרון",
+      "rangeEmpty": "0 מתוך 0",
+      "range": "{{startIndex}}-{{endIndex}} מתוך {{length}}"
+    }
+  }
+}

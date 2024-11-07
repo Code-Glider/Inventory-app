@@ -1,0 +1,190 @@
+// Theme variables
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --text-color-secondary: #666666;
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --hover-background: rgba(0, 0, 0, 0.04);
+}
+
+body.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --text-color-secondary: #aaaaaa;
+  --card-background: #1e1e1e;
+  --border-color: #333333;
+  --hover-background: rgba(255, 255, 255, 0.08);
+
+  // Material overrides for dark theme
+  .mat-mdc-card {
+    background-color: var(--card-background);
+    color: var(--text-color);
+  }
+
+  .mat-mdc-card-title,
+  .mat-mdc-card-subtitle {
+    color: var(--text-color) !important;
+  }
+
+  .mat-toolbar.mat-primary {
+    background: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .mat-mdc-tab-header {
+    background-color: var(--card-background);
+  }
+
+  .mat-mdc-tab-group {
+    color: var(--text-color);
+  }
+
+  .mat-mdc-form-field-label {
+    color: var(--text-color-secondary) !important;
+  }
+
+  .mat-mdc-input-element {
+    color: var(--text-color) !important;
+  }
+
+  .mat-mdc-form-field-outline {
+    color: var(--border-color) !important;
+  }
+}
+
+// Number input styles
+.number-input {
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px;
+  }
+}
+
+// Form field styles
+.mat-mdc-form-field {
+  .mat-mdc-text-field-wrapper {
+    background-color: var(--card-background);
+  }
+
+  &.mat-focused {
+    .mat-mdc-text-field-wrapper {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+// Action button styles
+.action-button {
+  &.mat-mdc-mini-fab {
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 
+                0 6px 10px 0 rgba(0,0,0,.14), 
+                0 1px 18px 0 rgba(0,0,0,.12);
+    z-index: 2;
+    
+    &:active {
+      box-shadow: 0 7px 8px -4px rgba(0,0,0,.2), 
+                  0 12px 17px 2px rgba(0,0,0,.14), 
+                  0 5px 22px 4px rgba(0,0,0,.12);
+    }
+
+    &.mat-primary {
+      background-color: #1976d2 !important;
+    }
+
+    &.mat-warn {
+      background-color: #f44336 !important;
+    }
+
+    .mat-icon {
+      color: white !important;
+    }
+
+    &[disabled] {
+      background-color: rgba(0, 0, 0, 0.12) !important;
+      .mat-icon {
+        color: rgba(0, 0, 0, 0.26) !important;
+      }
+    }
+  }
+}
+
+// Mobile styles
+@media (max-width: 600px) {
+  .mat-mdc-form-field {
+    .mat-mdc-text-field-wrapper {
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  input[type="number"] {
+    caret-color: #1976d2 !important;
+    
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.15) !important;
+    }
+  }
+
+  .action-button {
+    &.mat-mdc-mini-fab {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;
+      position: relative;
+      z-index: 2;
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &[disabled] {
+        opacity: 0.5;
+        background-color: rgba(0, 0, 0, 0.12) !important;
+      }
+    }
+  }
+
+  // Improve touch feedback
+  .mat-mdc-form-field-infix {
+    min-height: 48px;
+  }
+
+  // Highlight active input
+  .mat-focused .mat-mdc-form-field-flex {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  // Hide spinner buttons for number inputs
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+// Dark theme specific mobile styles
+body.dark-theme {
+  @media (max-width: 600px) {
+    .action-button {
+      &.mat-mdc-mini-fab {
+        &[disabled] {
+          background-color: rgba(255, 255, 255, 0.12) !important;
+          .mat-icon {
+            color: rgba(255, 255, 255, 0.3) !important;
+          }
+        }
+      }
+    }
+
+    input[type="number"]:focus {
+      background-color: rgba(255, 255, 255, 0.15) !important;
+    }
+  }
+}
